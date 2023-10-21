@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Register Here</title>
+</head>
+<body>
+    <h2 class="mt-5 pb-5 fw-bold text-center">Registration Form</h2>
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+    <form  class="row needs-validation mb-5" novalidate>
+        <div class="col-12">
+            <label class="form-label" for="first_name">First Name:</label>
+            <input class="form-control" type="text" id="first_name" name="first_name" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please enter your first name.
+              </div>
+        </div>
+
+        <div class="col-12">
+            <label class="form-label" for="last_name">Last Name:</label>
+            <input class="form-control" type="text" id="last_name" name="last_name" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please enter your last name.
+              </div>
+        </div>
+    
+        <div class="col-12">
+            <label class="form-label" for="email">Email:</label>
+            <input class="form-control" type="email" id="email" name="email" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please enter your email.
+              </div>
+        </div>
+        
+        <div class="col-12">
+            <label class="form-label" for="password">Password:</label>
+            <input class="form-control" type="password" id="password" name="password" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please enter your password.
+              </div>
+        </div>
+        
+        <div class="col-12">
+            <label class="form-label" for="phone_number">Phone Number:</label>
+            <input class="form-control" type="tel" id="phone_number" name="phone_number" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please enter your phone number.
+              </div>
+        </div>
+        
+        <div class="col-12">
+            <div class="form-label">Gender:</div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="male" name="gender" value="male" required>
+                <label class="form-check-label" for="male">Male</label><br>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="female" name="gender" value="female" required>
+                <label class="form-check-label" for="female">Female</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="other" name="gender" value="other" required>
+                <label class="form-check-label" for="other">Other</label>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please select your gender.
+                  </div>
+            </div>
+        </div>
+        
+        <div class="col-12">
+            <label class="form-label" for="province">Province:</label>
+        <select class="form-select" id="province" name="province" required>
+            <option selected disabled value="">Choose...</option>
+            <option value="abra">Abra</option>
+            <option value="agusan_del_norte">Agusan del Norte</option>
+            <option value="agusan_del_sur">Agusan del Sur</option>
+            <option value="aklan">Aklan</option>
+            <option value="albay">Albay</option>
+            <option value="antique">Antique</option>
+            <option value="apayao">Apayao</option>
+            <option value="aurora">Aurora</option>
+            <option value="basilan">Basilan</option>
+            <option value="bataan">Bataan</option>
+            <option value="batanes">Batanes</option>
+            <option value="batangas">Batangas</option>
+            <option value="benguet">Benguet</option>
+            <option value="biliran">Biliran</option>
+            <option value="bohol">Bohol</option>
+            <option value="bukidnon">Bukidnon</option>
+            <option value="bulacan">Bulacan</option>
+            <option value="cagayan">Cagayan</option>
+            <option value="camarines_norte">Camarines Norte</option>
+            <option value="camarines_sur">Camarines Sur</option>
+            <option value="camiguin">Camiguin</option>
+            <option value="capiz">Capiz</option>
+            <option value="catanduanes">Catanduanes</option>
+            <option value="cavite">Cavite</option>
+            <option value="cebu">Cebu</option>
+            <option value="compostela_valley">Compostela Valley</option>
+            <option value="cotabato">Cotabato</option>
+            <option value="davao_del_norte">Davao del Norte</option>
+            <option value="davao_del_sur">Davao del Sur</option>
+            <option value="davao_occidental">Davao Occidental</option>
+            <option value="davao_oriental">Davao Oriental</option>
+            <option value="dinagat_islands">Dinagat Islands</option>
+            <option value="eastern_samar">Eastern Samar</option>
+            <option value="guimaras">Guimaras</option>
+            <option value="ifugao">Ifugao</option>
+            <option value="ilocos_norte">Ilocos Norte</option>
+            <option value="ilocos_sur">Ilocos Sur</option>
+            <option value="iloilo">Iloilo</option>
+            <option value="isabela">Isabela</option>
+            <option value="kalinga">Kalinga</option>
+            <option value="la_union">La Union</option>
+            <option value="laguna">Laguna</option>
+            <option value="lanao_del_norte">Lanao del Norte</option>
+            <option value="lanao_del_sur">Lanao del Sur</option>
+            <option value="leyte">Leyte</option>
+            <option value="maguindanao">Maguindanao</option>
+            <option value="marinduque">Marinduque</option>
+            <option value="masbate">Masbate</option>
+            <option value="metro_manila">Metro Manila</option>
+            <option value="misamis_occidental">Misamis Occidental</option>
+            <option value="misamis_oriental">Misamis Oriental</option>
+            <option value="mountain_province">Mountain Province</option>
+            <option value="negros_occidental">Negros Occidental</option>
+            <option value="negros_oriental">Negros Oriental</option>
+            <option value="northern_samar">Northern Samar</option>
+            <option value="nueva_ecija">Nueva Ecija</option>
+            <option value="nueva_vizcaya">Nueva Vizcaya</option>
+            <option value="occidental_mindoro">Occidental Mindoro</option>
+            <option value="oriental_mindoro">Oriental Mindoro</option>
+            <option value="palawan">Palawan</option>
+            <option value="pampanga">Pampanga</option>
+            <option value="pangasinan">Pangasinan</option>
+            <option value="quezon">Quezon</option>
+            <option value="quirino">Quirino</option>
+            <option value="rizal">Rizal</option>
+            <option value="romblon">Romblon</option>
+            <option value="samar">Samar</option>
+            <option value="sarangani">Sarangani</option>
+            <option value="siquijor">Siquijor</option>
+            <option value="sorsogon">Sorsogon</option>
+            <option value="south_cotabato">South Cotabato</option>
+            <option value="southern_leyte">Southern Leyte</option>
+            <option value="sultan_kudarat">Sultan Kudarat</option>
+            <option value="sulu">Sulu</option>
+            <option value="surigao_del_norte">Surigao del Norte</option>
+            <option value="surigao_del_sur">Surigao del Sur</option>
+            <option value="tarlac">Tarlac</option>
+            <option value="tawi-tawi">Tawi-Tawi</option>
+            <option value="zambales">Zambales</option>
+            <option value="zamboanga_del_norte">Zamboanga del Norte</option>
+            <option value="zamboanga_del_sur">Zamboanga del Sur</option>
+            <option value="zamboanga_sibugay">Zamboanga Sibugay</option>
+        </select>
+            <div class="invalid-feedback">
+            Please select a valid province.
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-12 pt-4 d-flex justify-content-center align-items-center">
+            <input class="btn btn-warning fw-bold" type="submit" value="SUBMIT">
+        </div>
+    </form>
+    </div>
+
+    <script>
+        (() => {
+        'use strict'
+
+        
+        const forms = document.querySelectorAll('.needs-validation')
+
+
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+            }, false)
+        })
+        })()
+    </script>
+</body>
+</html>
